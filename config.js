@@ -25,26 +25,27 @@ module.exports = {
     }
   ],
   author: {
-    name: 'John Doe',
-    photo: '/photo.jpg',
-    bio: 'Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam. Sed arcu.',
+    name: 'Hiroki Fujino',
+    photo: '/profile-pic2.jpg',
+    bio: 'Scala backend engineer, living in Berlin',
     contacts: {
-      email: '',
-      facebook: '#',
-      telegram: '#',
-      twitter: '#',
-      github: '#',
+      email: 'hirokifujino0108@gmail.com',
+      facebook: '',
+      telegram: '',
+      twitter: '',
+      github: 'Hiroki6',
       rss: '',
       vkontakte: '',
-      linkedin: '#',
-      instagram: '#',
+      linkedin: 'hiroki-fujino-502851137/',
+      instagram: '',
       line: '',
       gitlab: '',
       weibo: '',
       codepen: '',
       youtube: '',
       soundcloud: '',
-      medium: '',
+      medium: '@hirokifujino',
+      speakerdeck: 'hiroki6'
     }
   }
 };
