@@ -1,10 +1,10 @@
 'use strict';
 
 module.exports = {
-  url: 'https://lumen.netlify.com',
+  url: 'https://hiroki6.dev',
   pathPrefix: '/',
-  title: 'Blog by John Doe',
-  subtitle: 'Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam. Sed arcu.',
+  title: 'Blog by Hiroki Fujino',
+  subtitle: 'Personal engineering blog',
   copyright: '© All rights reserved.',
   disqusShortname: '',
   postsPerPage: 4,
