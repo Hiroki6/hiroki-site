@@ -18,21 +18,17 @@ module.exports = {
     {
       label: 'About me',
       path: '/pages/about'
-    },
-    {
-      label: 'Contact me',
-      path: '/pages/contacts'
     }
   ],
   author: {
     name: 'Hiroki Fujino',
-    photo: '/profile-pic2.jpg',
+    photo: '/profile-pic2-small.jpg',
     bio: 'Scala backend engineer, living in Berlin',
     contacts: {
-      email: 'hirokifujino0108@gmail.com',
+      email: '',
       facebook: '',
       telegram: '',
-      twitter: '',
+      twitter: 'Fhiroki1',
       github: 'Hiroki6',
       rss: '',
       vkontakte: '',
