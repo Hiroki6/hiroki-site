@@ -15,7 +15,7 @@ socialImage: "/media/letter.png"
 
 ![hacking](/media/letter.png)
 
-This is a writeups of [Finish the flag](https://ctflearn.com/challenge/1122) in [CTFlearn](https://ctflearn.com). This question is categoried in `Reverse Engineering` and the difficulty is Medium.
+This is a writeups of [Finish the flag](https://ctflearn.com/challenge/1122) in [CTFlearn](https://ctflearn.com). This question is categoried in `Reverse Engineering` and the difficulty is Easy.
 
 
 >> I received a strange letter in the mail, when I unfolded the document inside, I discovered this matrix bar code. Can you figure out what it contains?
