@@ -111,6 +111,7 @@ This loop is executed up to 7times.
 ```
 08048098 <loop>:
  8048098:       3c 07                   cmp    al,0x7
+ 804809a:       74 1d                   je     80480b9 <done>
 ```
 
 In the `bite_of_flag` function, a character is defined. I assumed this character is the content of the flag.
