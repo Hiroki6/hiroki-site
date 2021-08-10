@@ -3,7 +3,7 @@ title: CTFlearn Writeups - Finish the flag -
 date: "2021-08-10T12:00:00.000Z"
 template: "post"
 draft: false
-slug: "ctflearn-reverse-enginneering"
+slug: "writesup-finish-the-flag"
 category: "Reverse Engineering"
 tags:
   - "CTF"
