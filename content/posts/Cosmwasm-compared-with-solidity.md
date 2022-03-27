@@ -13,7 +13,7 @@ description: "compare Cosmwasm with Solidity from a coding perspective"
 socialImage: "/media/terra_luna.jpg"
 ---
 
-![terra](/media/dapp.jpg)
+![dapp](/media/dapp.jpg)
 
 [Cosmwasm](https://docs.cosmwasm.com/docs/1.0/) is a smart contract platform.
 
