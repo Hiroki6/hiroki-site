@@ -15,7 +15,7 @@ socialImage: "/media/ctfwritesup/binary.jpg"
 
 ![binary](/media/ctfwritesup/binary.jpg)
 
-This article is about writesup of [Ramada](https://ctflearn.com/challenge/1009) and [Recklinghausen](https://ctflearn.com/challenge/995). These challenges are categorized in `Reverse Engineering` and the difficulty is `Easy`. The same person created these challenges. The `Ramada` is a 10-point challenge and the `Recklinghausen` is a 20-point challenge. Therefore the `Recklinghausen` is more complicated than `Ramada` as described in the description of the `Recklinghausen`.
+This article is about writesup of [Ramada](https://ctflearn.com/challenge/1009) and [Recklinghausen](https://ctflearn.com/challenge/995). These challenges are categorized in the `Reverse Engineering` category and the difficulty is `Easy`. The same person created these challenges. `Ramada` is a 10-point challenge and `Recklinghausen` is a 20-point challenge. Therefore `Recklinghausen` is more complicated than `Ramada` as described in the description of `Recklinghausen`.
 
 >> This is the 4th in a series of Beginner Reversing Challenges. If you are new to Reversing, you may want to solve Reykjavik, then Riyadh then Rangoon before solving this challenge. This is a 20 point challenge and is different in two ways from the previous 10 point challenges.
 
@@ -241,7 +241,7 @@ je 0x23d0
 
 It checks whether the result of `char of the flag XOR $rsi` is equal to the byte value of `$rdi+$rax*1`, which means that each char of the flag must be equal to the result of `$rsi XOR the byte value of $rdi+$rax` . This logic can be described as the statement below.
 ```
-char of the flag ^ $rsi = [$rdi+$rax*1] <=> char of the flag ^ $rsi = [$rdi+$rax*1]
+char of the flag ^ $rsi = [$rdi+$rax*1] => char of the flag = [$rdi+$rax*1] ^ $rsi
 ```
 
 As the result of the static analysis, I got the following two things.
@@ -276,7 +276,7 @@ gdb-peda$ run CTFlearn{xxxxxxxxxxxxxxxxxxxxxxx}
 
 When the program comes to the break point for the first time, I check whether the logic below is correct. 
 ```
-char of the flag ^ $rsi = [$rdi+$rax*1] <=> char of the flag ^ $rsi = [$rdi+$rax*1]
+char of the flag ^ $rsi = [$rdi+$rax*1] => char of the flag = [$rdi+$rax*1] ^ $rsi
 ```
 
 The values of the corresponding registers are below.
