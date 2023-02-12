@@ -26,11 +26,11 @@ The fundraiser application is originally  written in the book below. The origina
 In the official Cosmwasm doc, there is [a comparison doc with Solidity](https://docs.cosmwasm.com/docs/0.14/architecture/smart-contracts/). This doc describes mainly a comparison from a concept and a security perspective.
 On the other hand, I will compare the Cosmwasm with Solidity from a coding perspective based on the fundraiser application code in the article.
 
-1. State management
-2. Execute contracts
-3. Execute another contract from contract
-4. Standard functions/messages 
-5. Call contract functions
+1. [State management](#1-state-management)
+2. [Execute contracts](#2-execute-contracts)
+3. [Execute another contract from contract](#3-execute-another-contract-from-contract)
+4. [Standard functions/messages](#4-standard-functionslibraries)
+5. [Call contract functions](#5-call-contract-functions)
 
 ## 1. State management
 __Solidity__

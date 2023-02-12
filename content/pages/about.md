@@ -11,7 +11,9 @@ Software developer, mainly developing the back end of web applications, Scala pr
 Living in Berlin since 2019.
 
 ### Tech stack
-Scala, Golang, Python, GCP, DDD, Microservices
+Scala, Rust, Python, GCP, DDD, Microservices, Reverse engineering
 
 ### Interests
 Cyber security, Linkin Park, MMA, Boxing, Japanese BBQ
+
+[source code](https://github.com/Hiroki6/hiroki-site)
