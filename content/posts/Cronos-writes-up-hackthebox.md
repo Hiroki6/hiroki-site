@@ -9,7 +9,7 @@ tags:
   - "Security"
   - "HackTheBox"
 description: "Writeups of Cronos machine in HackTheBox"
-socialImage: "/media/cronos.png"
+socialImage: "/media/cronos-writesup/cronos.png"
 ---
 
 ![cronos](/media/cronos-writesup/cronos.png)
