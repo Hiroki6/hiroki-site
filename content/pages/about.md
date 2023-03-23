@@ -4,7 +4,7 @@ template: "page"
 socialImage: "/media/workplace.jpg"
 ---
 
-![workplace](/media/workplace.jpg)
+![explore](/media/explore.jpg)
 
 ## Hiroki Fujino
 Software developer, mainly developing the back end of web applications, Scala programming enthusiast.  
