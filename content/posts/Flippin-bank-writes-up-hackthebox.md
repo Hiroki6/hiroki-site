@@ -1,5 +1,5 @@
 ---
-title: Flippin bank crypto challenge Writesup - (Padding Orackle Attack) -
+title: Flippin bank crypto challenge Writesup - (Padding Oracle Attack) -
 date: "2023-03-30T12:00:00.000Z"
 template: "post"
 draft: false
@@ -9,7 +9,7 @@ tags:
   - "Security"
   - "HackTheBox"
   - "Cryptography"
-description: "Writeups of Flippin bank crypto challenge in HackTheBox. This challnge requires padding orackle attack for AES-CBC mode"
+description: "Writeups of Flippin bank crypto challenge in HackTheBox. This challenge requires a padding oracle attack."
 socialImage: "/media/flippin-bank/encryption.jpg"
 ---
 
@@ -18,7 +18,7 @@ socialImage: "/media/flippin-bank/encryption.jpg"
 This is a writes up of [Flippin Bank](https://app.hackthebox.com/challenges/Flippin-Bank) crypo challenge in HackTheBox.
 
 1. [Foothold](#foothold)
-2. [Padding orackle attack](#padding-oracle-attack)
+2. [Padding oracle attack](#padding-oracle-attack)
 3. [Exploit (Encryption Attack)](#exploit-encryption-attack)
 4. [Extra (Decryption attack)](#extra-decryption-attack)
 
@@ -115,7 +115,7 @@ I mainly read these articles below.
 2. [Padding Oracle AttackによるCBC modeの暗号文解読と改ざん (Japanese)](https://rintaro.hateblo.jp/entry/2017/12/31/174327)
 3. [Padding Oracle Attack 分かりやすく解説したい (Japanese)](https://partender810.hatenablog.com/entry/2021/06/08/225105)
 
-There are 2 attacks in padding oracle attack.
+There are 2 type of attacks in padding oracle attack.
 1. Decryption attack: An attacker exploits the padding oracle to decrypt a given ciphertext without knowing the encryption key by iteratively modifying and sending crafted ciphertexts to the oracle and observing its responses to reveal the original plaintext.
 2. Encryption attack: An attacker exploits the padding oracle to create a new ciphertext for a chosen plaintext without knowing the encryption key by leveraging their ability to decrypt any ciphertext and adjusting the plaintext accordingly, effectively encrypting a new message.
 
