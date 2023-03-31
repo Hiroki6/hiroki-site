@@ -24,12 +24,12 @@ This is a writes up of [Flippin Bank](https://app.hackthebox.com/challenges/Flip
 
 ## Foothold
 
-When I connect to the instance using the `nc` command, I am prompted to enter my username and password. After entering them, a leaked ciphertext is displayed, and I am asked to input another ciphertext. I copy the leaked ciphertext and paste it there, but I receive an error message saying `Please try again`. It appears that the ciphertext I entered was incorrect.
+When I connect to the instance using the `nc` command, I am prompted to enter my username and password. After entering them, a leaked ciphertext is displayed, and I am asked to input another ciphertext. I copy the leaked ciphertext and paste it there, but I receive an error message saying "Please try again". It appears that the ciphertext I entered was incorrect.
 
 ![first_request](/media/flippin-bank/first_request.png)
 
 Let's take a look at `app.py` file that I downloaded from the challenge page.
-Within the file, it decrypts the cipher text and checks if the plain text includes `admin&password=g0ld3n_b0y`.
+Within the file, it decrypts the cipher text and checks if the plain text includes "admin&password=g0ld3n_b0y".
 If this string is included, the app displays the flag.
 
 ```python
@@ -61,17 +61,17 @@ The leaked cipher text is a encrypted text of `msg` string where input username 
 msg = 'logged_username=' + user +'&password=' + passwd
 ```
 
-That means, if I leak a cipher text including `admin&password=g0ld3n_b0y`, I can input it and gets the flag.
+That means, if I leak a cipher text including "admin&password=g0ld3n_b0y", I can input it and gets the flag.
 
-Let's input `admin` as the username and `g0ld3n_b0y` as the password.
+Let's input "admin" as the username and "g0ld3n_b0y" as the password.
 However, The app exits before it leak the cipher text.
 
 ![admin](/media/flippin-bank/admin.png)
 
-The reason is below. Before the app encrypts `msg` string and leaks it, the app checks if `msg` includes `admin&password=g0ld3n_b0y`.
+The reason is below. Before the app encrypts `msg` string and leaks it, the app checks if `msg` includes "admin&password=g0ld3n_b0y".
 If this string is included, the app exits.
 
-Now I understand how the app works. The challenge is that I have to somehow create a cipher text including `admin&password=g0ld3n_b0y`.
+Now I understand how the app works. The challenge is that I have to somehow create a cipher text including "admin&password=g0ld3n_b0y".
 
 ```python
 try:
@@ -245,11 +245,16 @@ if __name__ == "__main__":
 
 ## Extra(Decryption attack)
 
-Decryption attack can also work for this app.
-I took some time to figure out how to decrypt the entire text because this app doesn't include the initial vector in the cipher text.
+A decryption attack could also work for this app. It took me some time to figure out how to decrypt the entire text because the app does not include the initial vector in the cipher text.
 
-In the end, I noticed the initial vector can be calculated with the first decrypted block(dec_ci(1)).
-The idea is we run the decryption attack with a null IV, then calculate XOR with the first decrypted block and the first block of original plain text. Since the app always uses the same initial vector, we can decrypt the entire text by doing the same attack again with the calculated initial vector.
+In the end, I realized that the initial vector could be calculated with the first decrypted block (`dec_ci(1)`). The idea is to run the decryption attack with a null IV, then calculate the XOR with the first decrypted block and the first block of the original plaintext. Since the app always uses the same initial vector, we can decrypt the entire text by performing the same attack again with the calculated initial vector.
+
+The code below works as follows:
+
+1. Leak a ciphertext with the username "admin" and password "password."
+2. Perform a decryption attack with a null initial vector to obtain the plaintext "logged_username=admin&password=password."
+3. The first block cannot be decrypted properly. Calculate the initial vector from the first decrypted block (`dec_ci(1)`).
+4. Retry steps 1 and 2 with the initial vector calculated in step 3.
 
 ```python
 def get_initial_cipher(username: str, password: str) -> str:
