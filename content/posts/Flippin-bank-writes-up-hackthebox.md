@@ -257,7 +257,7 @@ The code below works as follows:
 4. Retry steps 1 and 2 with the initial vector calculated in step 3.
 
 ```python
-def get_initial_cipher(username: str, password: str) -> str:
+def get_leaked_cipher(username: str, password: str) -> str:
     r = remote(HOST, PORT)
     r.sendafter("username: ", username)
     r.sendafter("password: ", password)
@@ -267,9 +267,9 @@ def get_initial_cipher(username: str, password: str) -> str:
     r.recvall()
     return cipher
 
-def decryption_attack(iv: bytearray = b"\x00" * BLOCK_SIZE) -> str:
+def decryption_attack(cipher_text: str, iv: bytearray = b"\x00" * BLOCK_SIZE) -> str:
     """
-    execute a decryption attack to get the initial vector
+    execute a decryption attack to decrypt a leacker cipher text and get the initial vector if the initial vector is unknown
 
     :iv: initial vector. the default is null vector
     :return: initial vector
@@ -278,7 +278,6 @@ def decryption_attack(iv: bytearray = b"\x00" * BLOCK_SIZE) -> str:
     # it will be used to calculate the initial vector later
     initial_block_plain = "logged_username="
     
-    cipher_text = get_initial_cipher("admin", "password")
     cipher_text = iv.hex() + cipher_text.zfill(len(cipher_text) + len(cipher_text) % BLOCK_SIZE*2)
 
     # split cipher_text into ciphe_block by BLOCK_SIZE * 2
@@ -331,8 +330,9 @@ def decryption_attack(iv: bytearray = b"\x00" * BLOCK_SIZE) -> str:
     return iv
 
 if __name__ == "__main__":
-    iv = decryption_attack()
-    decryption_attack(iv)
+    cipher_text = get_leaked_cipher("admin", "password")
+    iv = decryption_attack(cipher_text)
+    decryption_attack(cipher_text, iv)
 ```
 
 As you can see the picture below, After the first attack, the first block of the decrypted text is broken, but the initial vector is found.
