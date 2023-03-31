@@ -34,17 +34,17 @@ If this string is included, the app displays the flag.
 
 ```python
 try:
-		check = decrypt_data(enc_msg)
-	except Exception as e:
-		send_msg(s, str(e) + '\n')
-		s.close()
+	check = decrypt_data(enc_msg)
+except Exception as e:
+	send_msg(s, str(e) + '\n')
+	s.close()
 
 if check:
-		send_msg(s, 'Logged in successfully!\nYour flag is: '+ FLAG)
-		s.close()
-	else:
-		send_msg(s, 'Please try again.')
-		s.close()
+	send_msg(s, 'Logged in successfully!\nYour flag is: '+ FLAG)
+	s.close()
+else:
+	send_msg(s, 'Please try again.')
+	s.close()
 
 def decrypt_data(encryptedParams):
 	cipher = AES.new(key, AES.MODE_CBC,iv)
@@ -139,12 +139,13 @@ BLOCK_SIZE = 16
 
 def is_valid_padding(c_target: str, dec_ci: bytearray, m_prime: int, c_prev_prime: int) -> bool:
     """
-    
+    Check if the padding is valid through the app by chainging the ciphertext
+
     :param c_target: The target ciphertext block as a hex string
     :param dec_ci: Decrypted block (intermediate state) as a bytearray
     :param m_prime: The byte position (1-indexed) being attacked in the current block
     :param c_prev_prime: The modified byte value for the previous block's corresponding byte position
-    :return: boolean if the padding is valid or not
+    :return: boolean if the padding is valid
     """
     r = remote(HOST, PORT)
     # here is not important because the leaked cipher text is not our concerns.
