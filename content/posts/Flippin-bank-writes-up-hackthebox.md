@@ -1,5 +1,5 @@
 ---
-title: Flippin bank crypto challenge Writesup - (Padding Oracle Attack) -
+title: Flippin bank crypto challenge Writesup - Padding Oracle Attack -
 date: "2023-03-30T12:00:00.000Z"
 template: "post"
 draft: false
