@@ -83,6 +83,17 @@ except AssertionError:
 
 Let's look at how the app encrypts and decrypts a plain text. The app uses `AES-CBC` with `PKCS7` padding. The initial vector and secret key are initialized when the app starts running.
 
+```python
+from Crypto.Cipher import AES
+from Crypto.Util.Padding import pad,unpad
+
+def encrypt_data(data):
+	padded = pad(data.encode(),16,style='pkcs7')
+	cipher = AES.new(key, AES.MODE_CBC,iv)
+	enc = cipher.encrypt(padded)
+	return enc.hex()
+```
+
 
 ## Padding oracle attack
 
