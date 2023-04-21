@@ -1,9 +1,9 @@
 ---
-title: Cronos Writeups - HackTheBox -
+title: Cronos Writeup - HackTheBox -
 date: "2023-03-23T12:00:00.000Z"
 template: "post"
 draft: false
-slug: "cronos-writes-up"
+slug: "cronos-writeup"
 category: "Security"
 tags:
   - "Security"
@@ -14,7 +14,7 @@ socialImage: "/media/cronos-writesup/cronos.png"
 
 ![cronos](/media/cronos-writesup/cronos.png)
 
-This is a writes up of [Cronos](https://app.hackthebox.com/machines/Cronos) machine, which has a `medium` level.
+This is a writeup of [Cronos](https://app.hackthebox.com/machines/Cronos) machine, which has a `medium` level.
 
 1. [Enumeration](#enumeration)
 2. [User Flag](#user-flag)

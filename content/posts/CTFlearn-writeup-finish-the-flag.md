@@ -1,21 +1,21 @@
 ---
-title: CTFlearn Writeups - Finish the flag -
+title: CTFlearn Writeup - Finish the flag -
 date: "2021-08-10T12:00:00.000Z"
 template: "post"
 draft: false
-slug: "writesup-finish-the-flag"
+slug: "writeup-finish-the-flag"
 category: "Reverse Engineering"
 tags:
   - "CTF"
   - "Security"
   - "Reverse Engineering"
-description: "Writeups of 'Finish the flag' in CTFlearn reverse engineering challenge"
+description: "Writeup of 'Finish the flag' in CTFlearn reverse engineering challenge"
 socialImage: "/media/letter.png"
 ---
 
 ![hacking](/media/letter.png)
 
-This is a writesup of [Finish the flag](https://ctflearn.com/challenge/1122) in [CTFlearn](https://ctflearn.com). This challenge is categorised in `Reverse Engineering` and the difficulty is `Easy`.
+This is a writeup of [Finish the flag](https://ctflearn.com/challenge/1122) in [CTFlearn](https://ctflearn.com). This challenge is categorised in `Reverse Engineering` and the difficulty is `Easy`.
 
 
 >> I received a strange letter in the mail, when I unfolded the document inside, I discovered this matrix bar code. Can you figure out what it contains?

@@ -15,11 +15,11 @@ socialImage: "/media/ctfwritesup/binary.jpg"
 
 ![binary](/media/ctfwritesup/binary.jpg)
 
-This article is about writesup of [Ramada](https://ctflearn.com/challenge/1009) and [Recklinghausen](https://ctflearn.com/challenge/995). These challenges are categorized in the `Reverse Engineering` category and the difficulty is `Easy`. The same person created these challenges. `Ramada` is a 10-point challenge and `Recklinghausen` is a 20-point challenge. Therefore `Recklinghausen` is more complicated than `Ramada` as described in the description of `Recklinghausen`.
+This article is about writeups of [Ramada](https://ctflearn.com/challenge/1009) and [Recklinghausen](https://ctflearn.com/challenge/995). These challenges are categorized in the `Reverse Engineering` category and the difficulty is `Easy`. The same person created these challenges. `Ramada` is a 10-point challenge and `Recklinghausen` is a 20-point challenge. Therefore `Recklinghausen` is more complicated than `Ramada` as described in the description of `Recklinghausen`.
 
 >> This is the 4th in a series of Beginner Reversing Challenges. If you are new to Reversing, you may want to solve Reykjavik, then Riyadh then Rangoon before solving this challenge. This is a 20 point challenge and is different in two ways from the previous 10 point challenges.
 
-- [Ramada Writesup](#ramada-writesup)
+- [Ramada Writeup](#ramada-writeup)
 - [Recklinghausen Writesup](#recklinghausen-writesup)
 
 ## Ramada Writesup
@@ -151,7 +151,7 @@ I get the flag by running the script with GDB.
 gdb Ramada -x ./exploit.py
 ```
 
-## Recklinghausen Writesup
+## Recklinghausen Writeup
 
 This program requires the flag as an argument. The flag has to be `CTFlearn{flag}`. I need to find the proper `flag` value.
 

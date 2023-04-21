@@ -1,9 +1,9 @@
 ---
-title: Flippin bank crypto challenge Writesup - Padding Oracle Attack -
+title: Flippin bank crypto challenge Writeup - Padding Oracle Attack -
 date: "2023-03-30T12:00:00.000Z"
 template: "post"
 draft: false
-slug: "flippin-bank-writes-up"
+slug: "flippin-bank-writeup"
 category: "Security"
 tags:
   - "Security"
@@ -15,7 +15,7 @@ socialImage: "/media/flippin-bank/encryption.jpg"
 
 ![encryption](/media/flippin-bank/encryption.jpg)
 
-This is a writes up of [Flippin Bank](https://app.hackthebox.com/challenges/Flippin-Bank) crypo challenge in HackTheBox.
+This is a writeup of [Flippin Bank](https://app.hackthebox.com/challenges/Flippin-Bank) crypo challenge in HackTheBox.
 
 1. [Foothold](#foothold)
 2. [Padding oracle attack](#padding-oracle-attack)
