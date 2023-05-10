@@ -254,7 +254,7 @@ if __name__ == "__main__":
 
 ![flippin-bank](/media/flippin-bank/flippin-bank.png)
 
-## Extra(Decryption attack)
+## Extra (Decryption attack)
 
 A decryption attack could also work for this app. It took me some time to figure out how to decrypt the entire text because the app does not include the initial vector in the cipher text.
 

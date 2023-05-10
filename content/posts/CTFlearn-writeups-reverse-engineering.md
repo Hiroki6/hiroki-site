@@ -19,7 +19,7 @@ This article is about writeups of [Ramada](https://ctflearn.com/challenge/1009) 
 
 >> This is the 4th in a series of Beginner Reversing Challenges. If you are new to Reversing, you may want to solve Reykjavik, then Riyadh then Rangoon before solving this challenge. This is a 20 point challenge and is different in two ways from the previous 10 point challenges.
 
-- [Ramada Writeup](#ramada-writeup)
+- [Ramada Writeup](#ramada-writesup)
 - [Recklinghausen Writesup](#recklinghausen-writesup)
 
 ## Ramada Writesup
@@ -151,7 +151,7 @@ I get the flag by running the script with GDB.
 gdb Ramada -x ./exploit.py
 ```
 
-## Recklinghausen Writeup
+## Recklinghausen Writesup
 
 This program requires the flag as an argument. The flag has to be `CTFlearn{flag}`. I need to find the proper `flag` value.
 
