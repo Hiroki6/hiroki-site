@@ -204,8 +204,8 @@ int main(void) {
 
 Every time I executed the `poc`, the same output was generated.
 ```
-└─[0] <> gcc poc.c -o poc
-└─[0] <> ./poc
+└─[$] gcc poc.c -o poc
+└─[$] ./poc
 seed: 1655780698
 2014390344
 1469870660
@@ -283,8 +283,8 @@ int main(void) {
 ```
 
 ```
-└─[0] <> gcc exploit.c -o exploit
-└─[0] <> ./exploit
+└─[$] gcc exploit.c -o exploit
+└─[$] ./exploit
 
 Flag: xxxxxxxxxxxxxx
 ```
