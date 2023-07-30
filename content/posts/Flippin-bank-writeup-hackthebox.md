@@ -159,7 +159,7 @@ def is_valid_padding(c_target: str, dec_ci: bytearray, m_prime: int, c_prev_prim
     :return: boolean if the padding is valid
     """
     r = remote(HOST, PORT)
-    # here is not important because the leaked cipher text is not our concerns.
+    # here username and password are not important because the leaked cipher text is not our concerns.
     r.sendafter("username: ", "foo")
     r.sendafter("password: ", "bar")
 
