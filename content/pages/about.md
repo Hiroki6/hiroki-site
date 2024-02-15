@@ -7,11 +7,11 @@ socialImage: "/media/workplace.jpg"
 ![explore](/media/explore.jpg)
 
 ## Hiroki Fujino
-Software developer, mainly developing the back end of web applications, Scala programming enthusiast.  
+Software developer, mainly developing the back end of web applications. 
 Living in Berlin since 2019.
 
 ### Tech stack
-Scala, Rust, Python, GCP, DDD, Microservices, Reverse engineering
+Scala, Go, Rust, Python, AWS, GCP, Kubernetes, DDD, Microservices, Reverse engineering
 
 ### Interests
 Cyber security, Linkin Park, MMA, Boxing, Japanese BBQ

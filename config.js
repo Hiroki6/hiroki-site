@@ -23,12 +23,12 @@ module.exports = {
   author: {
     name: 'Hiroki Fujino',
     photo: '/profile-pic2-small.jpg',
-    bio: 'Scala backend engineer, living in Berlin',
+    bio: 'Backend engineer, living in Berlin',
     contacts: {
       email: '',
       facebook: '',
       telegram: '',
-      twitter: 'Fhiroki1',
+      twitter: '',
       github: 'Hiroki6',
       rss: '',
       vkontakte: '',
