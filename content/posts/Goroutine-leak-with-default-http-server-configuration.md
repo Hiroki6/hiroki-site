@@ -213,7 +213,7 @@ func main() {
 
 As you can see, the number of goroutines was not growing.
 
-![readtimeout](/media/goroutine-leak/readtimeout.png)
+![readtimeout](/media/goroutine-leak/read_timeout.png)
 
 ## Conclusion
 As we saw how the default http server configuraion leads to a goroutine leak, which is pretty dangerous.
