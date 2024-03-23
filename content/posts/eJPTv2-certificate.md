@@ -11,7 +11,7 @@ description: ""
 socialImage: "/media/certificates/eJPTv2_certificate.png"
 ---
 
-![eJPTv2 certificate](/media/certificates/eJPTv2_certificate.png)
+![eJPTv2 certificate](/media/certificates/eJPTv2_certificate2.png)
 
 Over the weekend, I took the eJPT exam offered by [ine.com](https://security.ine.com/certifications/ejpt-certification/).
 
