@@ -16,7 +16,7 @@ socialImage: "/media/certificates/eJPTv2_certificate2.png"
 Over the weekend, I took the eJPT exam offered by [ine.com](https://security.ine.com/certifications/ejpt-certification/).
 
 The exam allowed a duration of 48 hours. I started the exam at 9am then finished at around at 3pm.
-Although I initially believed I had achieved a perfect score, it appears I made a single error.
+Although I initially believed I had achieved a perfect score, it appears I made a single mistake.
 
 ![eJPTV2 result](/media/certificates/eJPTv2_result.png)
 
