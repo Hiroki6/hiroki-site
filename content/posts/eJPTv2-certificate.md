@@ -8,7 +8,7 @@ category: "Security"
 tags:
   - "Certificate"
 description: ""
-socialImage: "/media/certificates/eJPTv2_certificate.png"
+socialImage: "/media/certificates/eJPTv2_certificate2.png"
 ---
 
 ![eJPTv2 certificate](/media/certificates/eJPTv2_certificate2.png)
