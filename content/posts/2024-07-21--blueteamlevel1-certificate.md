@@ -20,6 +20,6 @@ The exam allowed a duration of 24 hours. I started the exam at 9am then finished
 I spent a total of 2 months preparing for the exam, which included:
 1. Following the provided content and labs.
 2. Completing some investigations and challenges in [BLUE TEAM LABS ONLINE](https://blueteamlabs.online/)
-3. completing [Boss of the SOC Version 1](https://bots.splunk.com/event/3oQ7sqI5bajOCP43o0svqT/detail)
+3. Completing [Boss of the SOC Version 1](https://bots.splunk.com/event/3oQ7sqI5bajOCP43o0svqT/detail)
 
 During the preparation, I learned many things, such as threat intelligence, phishing analysis, and digital forensics. I also became familiar with various tools, including Splunk, Wireshark, Autopsy, and DeepBlueCli. It was a good starting point in this field.
