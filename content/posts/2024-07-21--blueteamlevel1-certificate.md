@@ -1,6 +1,6 @@
 ---
 title: I passed Blue Team Level 1 exam
-date: "2024-07-21T12:00:00.000Z"
+date: "2024-07-21T21:00:00.000Z"
 template: "post"
 draft: false
 slug: "i-passed-blue-team-level1"
